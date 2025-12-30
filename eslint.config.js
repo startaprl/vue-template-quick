@@ -17,7 +17,6 @@ export default antfu(
       markdown: 'prettier',
     },
     rules: {
-
     },
   },
 )
