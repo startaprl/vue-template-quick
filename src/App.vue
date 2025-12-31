@@ -7,10 +7,14 @@ import SvgIcon from './components/SvgIcon.vue'
     <a>
       <SvgIcon name="vue" class="logo" />
     </a>
+    <h1>Hello World</h1>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+h1 {
+  color: $color;
+}
 .logo {
   width: 80px;
   height: 80px;
