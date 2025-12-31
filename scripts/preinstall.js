@@ -1,4 +1,4 @@
-const process = require('node:process')
+import process from 'node:process'
 
 if (!/pnpm/.test(process.env.npm_execpath || '')) {
   console.warn(
