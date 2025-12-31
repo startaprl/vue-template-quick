@@ -118,4 +118,4 @@ export function del<T = any>(url: string, params?: Record<string, any>, config?:
 }
 
 // 对外暴露
-export { api }
+export default api
