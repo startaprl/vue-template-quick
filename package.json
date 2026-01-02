@@ -10,9 +10,10 @@
     "preinstall": "node ./scripts/preinstall.js",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx, .tsx",
     "lint:fix": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
-    "dev": "pnpm vite --mode development",
-    "build": "pnpm vite build --mode production",
-    "preview": "pnpm vite preview"
+    "dev": "vite --mode development",
+    "build": "vite build --mode production",
+    "mock": "nitro dev",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@vue/shared": "^3.5.26",
@@ -35,6 +36,7 @@
     "eslint-plugin-format": "^1.1.0",
     "fast-glob": "^3.3.3",
     "lint-staged": "^16.2.7",
+    "nitropack": "2.11.13",
     "sass": "^1.97.1",
     "sass-loader": "^16.0.6",
     "simple-git-hooks": "^2.13.1",
