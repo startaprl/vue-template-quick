@@ -1,4 +1,5 @@
 import type { Router } from 'vue-router'
+import { setPageTitle } from '@/helpers'
 
 const LOGIN_PATH = '/auth/login'
 
@@ -11,6 +12,9 @@ function setupCommonGuard(router: Router) {
   const loadedPaths = new Set<string>()
 
   router.beforeEach((to) => {
+    // 设置标题
+    setPageTitle(to.meta.title as string)
+
     to.meta.loaded = loadedPaths.has(to.path)
 
     // 页面加载进度条
